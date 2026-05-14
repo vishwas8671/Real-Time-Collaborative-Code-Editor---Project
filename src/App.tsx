@@ -13,8 +13,6 @@ import { ThemeProvider } from "./components/ThemeProvider.tsx";
 import { ProtectedRoute } from "./components/ProtectedRoute.tsx";
 
 const queryClient = new QueryClient();
-
-
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider>
