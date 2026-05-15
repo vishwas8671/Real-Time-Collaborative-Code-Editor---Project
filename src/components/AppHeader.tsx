@@ -18,6 +18,7 @@ export const AppHeader = ({ children }: { children?: React.ReactNode }) => {
       if (data) { setUsername(data.username); setColor(data.avatar_color); }
     });
   }, [user]);
+  
 
   return (
     <header className="sticky top-0 z-30 border-b border-border/60 bg-background/80 backdrop-blur-xl">
