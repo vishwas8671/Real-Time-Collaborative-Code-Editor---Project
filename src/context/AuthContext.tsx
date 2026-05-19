@@ -9,6 +9,7 @@ interface AuthCtx {
   signOut: () => Promise<void>;
 }
 
+
 const Ctx = createContext<AuthCtx>({ user: null, session: null, loading: true, signOut: async () => {} });
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
